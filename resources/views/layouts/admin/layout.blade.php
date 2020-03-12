@@ -271,17 +271,6 @@ desired effect
           <i class="fa fa-user-circle-o"></i> <span>Usuarios</span></a>
         </li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li> -->
-        <!-- <li class="treeview">
-          <a href=""><i class="fa fa-user-circle-o"></i> <span>Productos</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{ route('products.index') }}">Listado de productos</a></li>
-            <li><a href="{{ route('products.create') }}">Registrar producto</a></li>
-          </ul>
-        </li>  -->
         <li class="treeview">
           <a href=""><i class="fa fa-user-circle-o"></i> <span>Clientes</span>
             <span class="pull-right-container">
