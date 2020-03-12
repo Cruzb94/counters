@@ -12,19 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::resource('/products', 'ProductsController');
-Route::get('/getProducts', 'ProductsController@getProducts')->name('getProducts');
-Route::get('/deleteProduct/{id}', 'ProductsController@destroy')->name('deleteProduct');
-Route::get('/getProduct/{id}', 'ProductsController@edit')->name('getProduct');
-Route::post('/updateProduct', 'ProductsController@update')->name('updateProduct');
-
 
 //clients
 Route::resource('/clients', 'ClientsController');
