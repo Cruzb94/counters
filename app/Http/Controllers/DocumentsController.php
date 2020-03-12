@@ -22,11 +22,7 @@ class DocumentsController extends Controller
     }
 
     public function getDocuments(){
-        echo "<pre>";
         $documents = Document::with('client')->get();
-
-        print_r($documents);
-        die();
         return $documents;
     }
 

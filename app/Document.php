@@ -22,6 +22,6 @@ class Document extends Model
    	
     public function client()
     {
-        return $this->belongsTo('App\Client', 'documents', 'client_id');
+        return $this->hasOne('App\Client', 'id', 'client_id');
     }
 }
